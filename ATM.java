@@ -6,10 +6,10 @@ public class ATM {
 
     private Scanner input;
 
-    // BankAccount object to access and modify the account balance
+    // BankAccount object 
     private BankAccount account;
 
-    // initialize constants for the menu 
+    // initialize menu 
     private final int WITHDRAW = 1;
     private final int DEPOSIT = 2;
     private final int CHECK_BALANCE = 3;
@@ -17,22 +17,22 @@ public class ATM {
 
    
     public ATM(BankAccount account) {
-        // Initialize the input scanner
+        // the input scanner
         input = new Scanner(System.in);
 
         // Initialize the bank account
         this.account = account;
     }
 
-    // Define the method to display the user interface and handle user choices
+    // method to display the user interface and user choices
     public void run() {
-        // Print a welcome message
+      
         System.out.println("Welcome to the ATM!");
 
-        // Declare and initialize a variable for the user's choice
+        // Declare and initialize a variable 
         int choice = 0;
 
-        // Loop until the user chooses to exit
+        // Loop until user chooses to exit
         while (choice != EXIT) {
 
             // Display the menu options
